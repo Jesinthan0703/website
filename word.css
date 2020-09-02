@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  color: red;
+  font-size: 128px;
+}
+
+.cube,
+.face {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateY(-30deg) rotateX(30deg);
+  animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(-30deg) rotateX(-150deg);
+  }
+  to {
+    transform: rotateY(-30deg) rotateX(210deg);
+  }
+}
